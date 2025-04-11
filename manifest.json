@@ -1,0 +1,17 @@
+{
+    "manifest_version": 3,
+    "name": "Alerta Climático",
+    "version": "1.0",
+    "description": "Mostra a previsão do tempo e alerta sobre chuva forte.",
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "icons/warning.png",
+        "48": "icons/warning.png",
+        "128": "icons/warning.png"
+      }
+    },
+    "permissions": ["storage"],
+    "host_permissions": ["https://api.openweathermap.org/"]
+  }
+  
