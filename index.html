@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Clima</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <div class="input-container">    
+        <input type="text" id="search" placeholder="Buscar Localização..." />
+        <i class="ri-search-line"></i>
+    </div>
+    <div id="weatherCard" class="card hidden">
+      <h2 id="city">Cidade</h2>
+      <p id="description">Descrição</p>
+      <h1 id="temp">--°C</h1>
+      <div class="icon-container">
+        <img id="weatherIcon" src="" class="icon" />
+      </div>
+      <div class="details">
+        <div><strong>Sensação</strong><br><span id="feels_like">--°C</span></div>
+        <div><strong>Mínima</strong><br><span id="min">--°C</span></div>
+        <div><strong>Máxima</strong><br><span id="max">--°C</span></div>
+        <div><strong>Vento</strong><br><span id="wind">-- km/h</span></div>
+        <div><strong>Pressão</strong><br><span id="pressure">-- hPa</span></div>
+        <div><strong>Umidade</strong><br><span id="humidity">--%</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div id="alertRain" class="alert-container">
+    <div class="alert">
+      <p><img src="./icons/warning.png" class="blink-image" alt="Chuva" width="15"> <span class="title-alert">ATENÇÃO</span></p>
+      <p class="msg-alert">Chuva forte prevista!!</p>
+      <div class="alert-details">
+        <div>Nuvens<br><span id="cloudsAlert">--%</span></div>
+        <div>Umidade<br><span id="humidityAlert">--%</span></div>
+        <img src="./icons/rain.png" alt="Chuva" width="40">
+      </div>
+      <p class="updated-time">Atualizado às <span id="timeUpdate">--:--</span></p>
+    </div>
+  </div>
+  <audio id="alertAudio" src="./alert.mp3" preload="auto"></audio>
+
+  <div class="footer">
+      <p>2025 &copy; Kellinton</p>
+  </div>
+
+  <script src="./style.js"></script>
+  <script src="./config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
